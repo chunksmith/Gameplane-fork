@@ -1,0 +1,10 @@
+name: actions probe
+on:
+  pull_request:
+  push:
+    branches: [test/actions-probe]
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo ok
